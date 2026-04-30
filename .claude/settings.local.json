@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.ecoideas.com.co)",
+      "Bash(where python3 *)",
+      "Bash(where py *)",
+      "Bash(py --version)",
+      "Bash(grep -i \"precio\\\\|price\\\\|COP\\\\|\\\\$[0-9]\")",
+      "Bash(grep -o '\\\\$[0-9][0-9\\\\.]*' \"C:/Users/juanc/.claude/projects/G--Mi-unidad-Biot--Imagenes-Portafolio-Biot-/1d29292f-0f83-4723-a9c9-bb36e7b66800.jsonl\")",
+      "mcp__9d1ec79c-5dc7-409c-ad27-c4c1b2ce44bf__list-brand-kits",
+      "mcp__9d1ec79c-5dc7-409c-ad27-c4c1b2ce44bf__generate-design",
+      "PowerShell(& \"C:\\\\Users\\\\juanc\\\\AppData\\\\Local\\\\Temp\\\\add_price_ids.ps1\")",
+      "PowerShell(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\juanc\\\\AppData\\\\Local\\\\Temp\\\\add_price_ids.ps1\")"
+    ]
+  }
+}

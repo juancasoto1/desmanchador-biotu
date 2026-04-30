@@ -1,0 +1,142 @@
+id,price,descripcion
+lavaloza_atom_500ml,$5.800,Lavaloza Antibacterial — Spray Atom 500 ml
+lavaloza_bolsa_500ml,$5.800,Lavaloza Antibacterial — Bolsa 500 ml
+lavaloza_bolsa_1l,$10.000,Lavaloza Antibacterial — Bolsa 1 L
+lavaloza_repuesto_4l,$39.300,Lavaloza Antibacterial — Repuesto 4 L
+lavaloza_repuesto_20l,$166.000,Lavaloza Antibacterial — Repuesto 20 L
+lavaloza_caja_4l,$41.700,Lavaloza Antibacterial — Caja 4 L
+lavaloza_caja_20l,$173.800,Lavaloza Antibacterial — Caja 20 L
+lavaloza_garrafa_4l,$41.700,Lavaloza Antibacterial — Garrafa 4 L
+lavaloza_garrafa_20l,$187.600,Lavaloza Antibacterial — Garrafa 20 L
+lavpro_atom_500ml,$7.200,Lavaloza PRO MAX — Spray Atom 500 ml
+lavpro_bolsa_500ml,$7.200,Lavaloza PRO MAX — Bolsa 500 ml
+lavpro_bolsa_1l,$12.800,Lavaloza PRO MAX — Bolsa 1 L
+lavpro_repuesto_4l,$50.900,Lavaloza PRO MAX — Repuesto 4 L
+lavpro_repuesto_20l,$225.000,Lavaloza PRO MAX — Repuesto 20 L
+lavpro_caja_4l,$53.300,Lavaloza PRO MAX — Caja 4 L
+lavpro_caja_20l,$232.700,Lavaloza PRO MAX — Caja 20 L
+lavpro_garrafa_4l,$53.300,Lavaloza PRO MAX — Garrafa 4 L
+lavpro_garrafa_20l,$246.800,Lavaloza PRO MAX — Garrafa 20 L
+desmanchador_atom_500ml,$8.100,Desmanchador Juntas y Baños — Spray 500 ml
+desmanchador_bolsa_1l,$10.800,Desmanchador Juntas y Baños — Botella 1 L
+desmanchador_repuesto_4l,$42.900,Desmanchador Juntas y Baños — Repuesto 4 L
+desmanchador_repuesto_20l,$184.600,Desmanchador Juntas y Baños — Repuesto 20 L
+desmanchador_caja_4l,$45.400,Desmanchador Juntas y Baños — Caja 4 L
+desmanchador_caja_20l,$192.300,Desmanchador Juntas y Baños — Caja 20 L
+desmanchador_garrafa_4l,$45.400,Desmanchador Juntas y Baños — Garrafa 4 L
+desmanchador_garrafa_20l,$206.300,Desmanchador Juntas y Baños — Garrafa 20 L
+jabon_dispensador_500ml,$8.500,Jabón de Manos — Dispensador Aconcagua 500 ml
+jabon_amanecer_500ml,$8.500,Jabón de Manos — Amanecer 500 ml
+jabon_amanecer_1l,$13.000,Jabón de Manos — Amanecer 1 L
+jabon_coco_500ml,$8.500,Jabón de Manos — Coco y Avena 500 ml
+jabon_coco_1l,$13.000,Jabón de Manos — Coco y Avena 1 L
+jabon_aconcagua_500ml,$8.500,Jabón de Manos — Aconcagua 500 ml
+jabon_aconcagua_1l,$13.000,Jabón de Manos — Aconcagua 1 L
+suavizante_bolsa_500ml,$5.600,Suavizante de Ropa — Bolsa 500 ml
+suavizante_bolsa_1l,$9.400,Suavizante de Ropa — Bolsa 1 L
+suavizante_repuesto_4l,$37.000,Suavizante de Ropa — Repuesto 4 L
+suavizante_repuesto_20l,$155.200,Suavizante de Ropa — Repuesto 20 L
+suavizante_caja_4l,$39.400,Suavizante de Ropa — Caja 4 L
+suavizante_caja_20l,$162.900,Suavizante de Ropa — Caja 20 L
+suavizante_garrafa_4l,$39.400,Suavizante de Ropa — Garrafa 4 L
+suavizante_garrafa_20l,$176.900,Suavizante de Ropa — Garrafa 20 L
+detblanca_bolsa_500ml,$6.400,Detergente Ropa Blanca — Bolsa 500 ml
+detblanca_bolsa_1l,$11.100,Detergente Ropa Blanca — Bolsa 1 L
+detblanca_repuesto_4l,$44.200,Detergente Ropa Blanca — Repuesto 4 L
+detblanca_repuesto_20l,$191.200,Detergente Ropa Blanca — Repuesto 20 L
+detblanca_caja_4l,$46.600,Detergente Ropa Blanca — Caja 4 L
+detblanca_caja_20l,$198.900,Detergente Ropa Blanca — Caja 20 L
+detblanca_garrafa_4l,$46.600,Detergente Ropa Blanca — Garrafa 4 L
+detblanca_garrafa_20l,$212.900,Detergente Ropa Blanca — Garrafa 20 L
+detcolor_bolsa_500ml,$6.400,Detergente Ropa Color — Bolsa 500 ml
+detcolor_bolsa_1l,$11.000,Detergente Ropa Color — Bolsa 1 L
+detcolor_repuesto_4l,$43.500,Detergente Ropa Color — Repuesto 4 L
+detcolor_repuesto_20l,$187.600,Detergente Ropa Color — Repuesto 20 L
+detcolor_caja_4l,$45.900,Detergente Ropa Color — Caja 4 L
+detcolor_caja_20l,$195.300,Detergente Ropa Color — Caja 20 L
+detcolor_garrafa_4l,$45.900,Detergente Ropa Color — Garrafa 4 L
+detcolor_garrafa_20l,$209.300,Detergente Ropa Color — Garrafa 20 L
+detdelicada_bolsa_500ml,$7.100,Detergente Ropa Delicada — Bolsa 500 ml
+detdelicada_bolsa_1l,$12.500,Detergente Ropa Delicada — Bolsa 1 L
+detdelicada_repuesto_4l,$50.100,Detergente Ropa Delicada — Repuesto 4 L
+detdelicada_repuesto_20l,$220.500,Detergente Ropa Delicada — Repuesto 20 L
+detdelicada_caja_4l,$52.500,Detergente Ropa Delicada — Caja 4 L
+detdelicada_caja_20l,$228.200,Detergente Ropa Delicada — Caja 20 L
+detdelicada_garrafa_4l,$52.500,Detergente Ropa Delicada — Garrafa 4 L
+detdelicada_garrafa_20l,$242.200,Detergente Ropa Delicada — Garrafa 20 L
+multiusos_bolsa_500ml,$5.400,Detergente Multiusos — Bolsa 500 ml
+multiusos_bolsa_1l,$8.900,Detergente Multiusos — Bolsa 1 L
+multiusos_repuesto_4l,$35.300,Detergente Multiusos — Repuesto 4 L
+multiusos_repuesto_20l,$146.900,Detergente Multiusos — Repuesto 20 L
+multiusos_caja_4l,$37.800,Detergente Multiusos — Caja 4 L
+multiusos_caja_20l,$154.500,Detergente Multiusos — Caja 20 L
+multiusos_garrafa_4l,$37.800,Detergente Multiusos — Garrafa 4 L
+multiusos_garrafa_20l,$168.500,Detergente Multiusos — Garrafa 20 L
+vidrios_atom_500ml,$5.800,Limpiavidrios — Spray Atom 500 ml
+vidrios_bolsa_500ml,$4.100,Limpiavidrios — Bolsa 500 ml
+vidrios_bolsa_1l,$6.400,Limpiavidrios — Bolsa 1 L
+vidrios_repuesto_4l,$25.200,Limpiavidrios — Repuesto 4 L
+vidrios_repuesto_20l,$96.600,Limpiavidrios — Repuesto 20 L
+vidrios_caja_4l,$27.600,Limpiavidrios — Caja 4 L
+vidrios_caja_20l,$104.300,Limpiavidrios — Caja 20 L
+vidrios_garrafa_4l,$27.600,Limpiavidrios — Garrafa 4 L
+vidrios_garrafa_20l,$118.200,Limpiavidrios — Garrafa 20 L
+descocina_atom_500ml,$10.800,Desengrasante Cocina — Spray 500 ml
+descocina_bolsa_1l,$16.500,Desengrasante Cocina — Botella 1 L
+descocina_repuesto_4l,$65.600,Desengrasante Cocina — Repuesto 4 L
+descocina_repuesto_20l,$297.900,Desengrasante Cocina — Repuesto 20 L
+descocina_caja_4l,$68.000,Desengrasante Cocina — Caja 4 L
+descocina_caja_20l,$305.600,Desengrasante Cocina — Caja 20 L
+descocina_garrafa_4l,$68.000,Desengrasante Cocina — Garrafa 4 L
+descocina_garrafa_20l,$319.400,Desengrasante Cocina — Garrafa 20 L
+ambientador_bolsa_500ml,$4.400,Ambientador Limpiapisos — Bolsa 500 ml
+ambientador_bolsa_1l,$7.100,Ambientador Limpiapisos — Bolsa 1 L
+ambientador_repuesto_4l,$28.000,Ambientador Limpiapisos — Repuesto 4 L
+ambientador_repuesto_20l,$110.100,Ambientador Limpiapisos — Repuesto 20 L
+ambientador_caja_4l,$30.400,Ambientador Limpiapisos — Caja 4 L
+ambientador_caja_20l,$117.800,Ambientador Limpiapisos — Caja 20 L
+ambientador_garrafa_4l,$30.400,Ambientador Limpiapisos — Garrafa 4 L
+ambientador_garrafa_20l,$131.800,Ambientador Limpiapisos — Garrafa 20 L
+eliminador_atom_500ml,$8.200,Eliminador de Olores — Spray 500 ml
+eliminador_bolsa_500ml,$6.500,Eliminador de Olores — Bolsa 500 ml
+eliminador_bolsa_1l,$11.400,Eliminador de Olores — Bolsa 1 L
+eliminador_repuesto_4l,$44.800,Eliminador de Olores — Repuesto 4 L
+eliminador_repuesto_20l,$193.800,Eliminador de Olores — Repuesto 20 L
+eliminador_caja_4l,$47.200,Eliminador de Olores — Caja 4 L
+eliminador_caja_20l,$201.600,Eliminador de Olores — Caja 20 L
+eliminador_garrafa_4l,$47.200,Eliminador de Olores — Garrafa 4 L
+eliminador_garrafa_20l,$215.600,Eliminador de Olores — Garrafa 20 L
+desinfectante_atom_500ml,$6.300,Limpiador Desinfectante — Spray 500 ml
+desinfectante_bolsa_500ml,$4.500,Limpiador Desinfectante — Bolsa 500 ml
+desinfectante_bolsa_1l,$7.400,Limpiador Desinfectante — Bolsa 1 L
+desinfectante_repuesto_4l,$28.800,Limpiador Desinfectante — Repuesto 4 L
+desinfectante_repuesto_20l,$114.300,Limpiador Desinfectante — Repuesto 20 L
+desinfectante_caja_4l,$31.200,Limpiador Desinfectante — Caja 4 L
+desinfectante_caja_20l,$122.100,Limpiador Desinfectante — Caja 20 L
+desinfectante_garrafa_4l,$31.200,Limpiador Desinfectante — Garrafa 4 L
+desinfectante_garrafa_20l,$136.000,Limpiador Desinfectante — Garrafa 20 L
+shampoo_bolsa_500ml,$7.200,Shampoo Vehículos — Bolsa 500 ml
+shampoo_bolsa_1l,$12.300,Shampoo Vehículos — Bolsa 1 L
+shampoo_repuesto_4l,$47.000,Shampoo Vehículos — Repuesto 4 L
+shampoo_repuesto_20l,$202.800,Shampoo Vehículos — Repuesto 20 L
+shampoo_caja_4l,$48.800,Shampoo Vehículos — Caja 4 L
+shampoo_caja_20l,$210.000,Shampoo Vehículos — Caja 20 L
+shampoo_garrafa_4l,$48.800,Shampoo Vehículos — Garrafa 4 L
+shampoo_garrafa_20l,$224.400,Shampoo Vehículos — Garrafa 20 L
+despro_tarro_500ml,$12.600,Desengrasante Profesional — Tarro 500 ml
+despro_bolsa_500ml,$10.000,Desengrasante Profesional — Bolsa 500 ml
+despro_bolsa_1l,$17.800,Desengrasante Profesional — Bolsa 1 L
+despro_repuesto_4l,$69.000,Desengrasante Profesional — Repuesto 4 L
+despro_repuesto_20l,$313.200,Desengrasante Profesional — Repuesto 20 L
+despro_caja_4l,$71.000,Desengrasante Profesional — Caja 4 L
+despro_caja_20l,$320.400,Desengrasante Profesional — Caja 20 L
+despro_garrafa_4l,$71.000,Desengrasante Profesional — Garrafa 4 L
+despro_garrafa_20l,$335.000,Desengrasante Profesional — Garrafa 20 L
+motores_bolsa_500ml,$6.800,Desengrasante Motores — Bolsa 500 ml
+motores_bolsa_1l,$11.400,Desengrasante Motores — Bolsa 1 L
+motores_repuesto_4l,$43.400,Desengrasante Motores — Repuesto 4 L
+motores_repuesto_20l,$184.700,Desengrasante Motores — Repuesto 20 L
+motores_caja_4l,$45.300,Desengrasante Motores — Caja 4 L
+motores_caja_20l,$191.900,Desengrasante Motores — Caja 20 L
+motores_garrafa_4l,$45.300,Desengrasante Motores — Garrafa 4 L
+motores_garrafa_20l,$206.400,Desengrasante Motores — Garrafa 20 L
