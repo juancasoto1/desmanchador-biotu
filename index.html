@@ -304,6 +304,14 @@ footer::before{content:"";display:block;height:3px;background:linear-gradient(90
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
         <input type="search" id="searchInput" placeholder="Buscar producto…" autocomplete="off">
       </label>
+      <select class="tool-select" id="categoryFilter" aria-label="Filtrar por categoría">
+        <option value="all">Todas las categorías</option>
+        <option value="cocina">🍽️ Cocina</option>
+        <option value="lavanderia">👕 Lavandería</option>
+        <option value="hogar">🏠 Hogar</option>
+        <option value="profesional">⚙️ Profesional</option>
+        <option value="higiene">🧴 Higiene</option>
+      </select>
       <select class="tool-select" id="priceFilter" aria-label="Filtrar por precio">
         <option value="all">Todos los precios</option>
         <option value="lt10000">Menor a $10.000</option>
@@ -506,6 +514,7 @@ footer::before{content:"";display:block;height:3px;background:linear-gradient(90
 
   const grid           = document.getElementById('productsGrid');
   const searchInput    = document.getElementById('searchInput');
+  const categoryFilter = document.getElementById('categoryFilter');
   const priceFilter    = document.getElementById('priceFilter');
   const sortSelect     = document.getElementById('sortSelect');
   const subtitle       = document.getElementById('catalogSubtitle');
@@ -576,14 +585,38 @@ footer::before{content:"";display:block;height:3px;background:linear-gradient(90
       </article>`;
   };
 
+  // ── Mapa de categorías por slug ──────────────────────────────────────────────
+  const SLUG_CATEGORY_MAP = {
+    'lavaloza-antibacterial':                      'cocina',
+    'lavaloza-liquido-antibacterial-pro-max':       'cocina',
+    'desengrasante_de_cocina_biotu':                'cocina',
+    'desmanchador-de-juntas-y-banos':               'cocina',
+    'limpiavidrios_biotu':                          'cocina',
+    'limpiador_desinfectante_de_superficies_biotu': 'cocina',
+    'eliminador_de_olores_biotu':                   'cocina',
+    'ambientador-y-limpia-pisos-biotu':             'hogar',
+    'detergente_liquido_ropa_blanca_biotu':         'lavanderia',
+    'detergente_liquido_ropa_color_biotu':          'lavanderia',
+    'detergente_liquido_ropa_delicada_biotu':       'lavanderia',
+    'detergente-liquido-multiusos-biotu':           'lavanderia',
+    'suavizante_ropa_liquido_biotu':                'lavanderia',
+    'desengrasante_profesional_biotu':              'profesional',
+    'desengrasante_de_motores_biotu':               'profesional',
+    'shampoo_para_vehiculos_biotu':                 'profesional',
+    'jabon_liquido_manos_y_cuerpo_biotu':           'higiene',
+  };
+
   const applyFilters = () => {
-    const q       = (searchInput.value || '').trim().toLowerCase();
-    const price   = priceFilter.value;
-    const sort    = sortSelect.value;
+    const q        = (searchInput.value || '').trim().toLowerCase();
+    const category = categoryFilter.value;
+    const price    = priceFilter.value;
+    const sort     = sortSelect.value;
 
     let arr = allProducts.slice();
 
     if (q) arr = arr.filter((p) => p.nombre.toLowerCase().includes(q));
+
+    if (category !== 'all') arr = arr.filter((p) => SLUG_CATEGORY_MAP[p.slug] === category);
 
     if (price === 'lt10000') arr = arr.filter((p) => p.precioBajo < 10000);
     if (price === '10to50')  arr = arr.filter((p) => p.precioBajo >= 10000 && p.precioBajo <= 50000);
@@ -635,6 +668,7 @@ footer::before{content:"";display:block;height:3px;background:linear-gradient(90
 
   // ── Listeners ────────────────────────────────────────
   searchInput.addEventListener('input', applyFilters);
+  categoryFilter.addEventListener('change', applyFilters);
   priceFilter.addEventListener('change', applyFilters);
   sortSelect.addEventListener('change', applyFilters);
 
