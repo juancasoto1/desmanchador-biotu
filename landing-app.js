@@ -1,7 +1,8 @@
 (function(){
   'use strict';
 
-  const WA_NUMBER = '573166152899';
+  const WA_NUMBER   = '573166152899';
+  const TIENDA_BASE = 'https://tienda.equoradistribuciones.com';
   // Local/file:// → apuntar a localhost:3000
   // Producción    → rutas relativas (mismo servidor Railway)
   const _h = window.location.hostname;
@@ -561,6 +562,42 @@
     });
   });
 
+  // ── Botones "Agregar al carrito" ─────────────────────────────────────────
+  // Inyecta un botón de carrito junto a cada CTA de WhatsApp.
+  // Se llama desde renderStatic() — sin necesidad de API.
+  const CART_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>';
+
+  function injectCartButtons(productName){
+    const url = TIENDA_BASE + '/tienda?producto=' + encodeURIComponent(productName);
+
+    function makeBtn(id, cls, label){
+      const a = document.createElement('a');
+      a.id = id; a.href = url; a.target = '_blank'; a.rel = 'noopener';
+      a.className = cls;
+      a.innerHTML = CART_SVG + (label ? ' ' + label : '');
+      if(!label) a.title = 'Agregar al carrito';
+      return a;
+    }
+
+    // 1. Hero CTA — insertar después del botón WhatsApp
+    const heroWa = $('hero-wa-btn');
+    if(heroWa && !$('hero-cart-btn')){
+      heroWa.parentNode.insertBefore(makeBtn('hero-cart-btn','btn btn-cart','Agregar al carrito'), heroWa.nextSibling);
+    }
+
+    // 2. CTA block inferior — insertar después del botón WhatsApp
+    const ctaWa = $('cta-wa-btn');
+    if(ctaWa && !$('cta-cart-btn')){
+      ctaWa.parentNode.insertBefore(makeBtn('cta-cart-btn','btn btn-cart','Agregar al carrito'), ctaWa.nextSibling);
+    }
+
+    // 3. Sticky bar — insertar antes del botón WhatsApp
+    const barWa = $('bar-wa-btn');
+    if(barWa && !$('bar-cart-btn')){
+      barWa.parentNode.insertBefore(makeBtn('bar-cart-btn','bar-cart-btn'), barWa);
+    }
+  }
+
   // ── PASO 1: Renderizar contenido estático inmediatamente ──────────────────
   // (benefits, features, step2, reviews, faq, category)
   // No necesita API — se muestra de inmediato
@@ -632,6 +669,10 @@
         set(`rev${n}-avatar`,r.init);
       });
     }
+
+    // Botones carrito (usa nombre del producto desde PRODUCT_CONTENT)
+    const productNameForCart = content.name || 'Producto Biotú';
+    injectCartButtons(productNameForCart);
   }
 
   // ── PASO 2: Actualizar con datos dinámicos de la API ──────────────────────

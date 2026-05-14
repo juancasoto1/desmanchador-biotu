@@ -87,6 +87,8 @@ a{color:inherit}img{display:block;max-width:100%}
 .btn-wa:hover{background:var(--wa-dark);transform:translateY(-1px)}
 .btn-ghost{background:transparent;color:var(--ink-2);border-color:var(--line)}
 .btn-ghost:hover{border-color:var(--ink-2)}
+.btn-cart{background:#1a3a6b;color:#fff}
+.btn-cart:hover{background:#142d54;transform:translateY(-1px)}
 .btn svg{width:16px;height:16px}
 
 .hero-meta{display:flex;flex-wrap:wrap;gap:20px 28px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
@@ -248,6 +250,8 @@ details p{margin:12px 0 0;color:var(--muted);font-size:14px;line-height:1.6}
 .cta-block .btn-wa:hover{background:var(--wa-dark)}
 .cta-block .btn-ghost{border-color:rgba(255,255,255,.3);color:#fff;justify-content:center}
 .cta-block .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.cta-block .btn-cart{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.35);justify-content:center;font-size:16px;padding:16px 24px}
+.cta-block .btn-cart:hover{background:rgba(255,255,255,.25)}
 
 /* ── DARK FOOTER ─────────────────────────────────────────────────────────── */
 footer{background:#111;border-top:3px solid var(--leaf);padding:56px 0 32px;color:rgba(255,255,255,.55);font-size:13.5px}
@@ -280,6 +284,8 @@ footer{background:#111;border-top:3px solid var(--leaf);padding:56px 0 32px;colo
 .sticky-wa-bar .bar-price strong{font-family:"Plus Jakarta Sans";font-size:20px;font-weight:800;color:var(--ink-2)}
 .sticky-wa-bar .bar-btn{display:flex;align-items:center;gap:8px;background:var(--wa);color:#fff;padding:12px 20px;border-radius:14px;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap;flex-shrink:0}
 .sticky-wa-bar .bar-btn svg{width:18px;height:18px}
+.sticky-wa-bar .bar-cart-btn{display:flex;align-items:center;justify-content:center;background:#1a3a6b;color:#fff;width:48px;height:48px;border-radius:14px;text-decoration:none;flex-shrink:0}
+.sticky-wa-bar .bar-cart-btn svg{width:20px;height:20px}
 @media(max-width:640px){.sticky-wa-bar{display:flex}}
 
 /* ── SKELETON LOADERS ────────────────────────────────────────────────────── */
