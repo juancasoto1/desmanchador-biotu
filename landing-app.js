@@ -686,6 +686,8 @@
       set('desc-title', product.nombre);
       document.title = `${product.nombre} | Equora Distribuciones`;
       const ot=$('og-title'); if(ot) ot.content=product.nombre;
+      // Actualizar botones carrito con nombre real de Shopify
+      updateCartLinks();
     }
     if(product.descripcion){
       set('hero-desc', product.descripcion);
@@ -790,6 +792,17 @@
     set('bar-price', fmt(selectedVariant.precio));
   }
 
+  // Actualiza los href de los botones carrito con nombre real (Shopify) + variante seleccionada
+  function updateCartLinks(){
+    const name = (product&&product.nombre) || content.name || 'Producto Biotú';
+    const pres = selectedVariant ? selectedVariant.nombre : null;
+    let url = TIENDA_BASE + '/tienda?producto=' + encodeURIComponent(name);
+    if(pres) url += '&presentacion=' + encodeURIComponent(pres);
+    ['hero-cart-btn','cta-cart-btn','bar-cart-btn'].forEach(id=>{
+      const el=$(id); if(el) el.href=url;
+    });
+  }
+
   function updateLinks(){
     if(!selectedVariant) return;
     const name = (product&&product.nombre) || content.name || 'Producto Biotú';
@@ -797,6 +810,7 @@
     ['nav-wa-cta','hero-wa-btn','cta-wa-btn','bar-wa-btn','wa-fab'].forEach(id=>{
       const el=$(id); if(el) el.href=link;
     });
+    updateCartLinks(); // sincronizar botón carrito con variante seleccionada
   }
 
   function renderPresTable(){
