@@ -64,7 +64,12 @@ button{font-family:inherit;cursor:pointer}
 .nav-tienda{background:#1a3a6b;color:#fff;text-decoration:none;padding:9px 16px;border-radius:999px;font-weight:600;font-size:13px;display:inline-flex;align-items:center;gap:7px;transition:background .2s,transform .15s;box-shadow:0 4px 12px -4px rgba(26,58,107,.4)}
 .nav-tienda:hover{background:#142d54;transform:translateY(-1px)}
 .nav-tienda svg{width:14px;height:14px}
-@media(max-width:880px){.nav-tienda{display:none}}
+@media(max-width:880px){
+  .nav-tienda{padding:7px 11px;font-size:11.5px;gap:5px}
+  .nav-tienda svg{width:12px;height:12px}
+  .nav-cta{padding:7px 11px;font-size:11.5px;gap:5px}
+  .nav-cta svg{width:12px;height:12px}
+}
 .hamburger{display:none;background:transparent;border:0;padding:8px;color:var(--ink-2)}
 .hamburger svg{width:26px;height:26px}
 @media(max-width:880px){
@@ -240,7 +245,6 @@ footer::before{content:"";display:block;height:3px;background:linear-gradient(90
       <a href="#inicio">Inicio</a>
       <a href="#productos">Productos</a>
       <a href="#contacto">Contacto</a>
-      <a href="https://tienda.equoradistribuciones.com/tienda" target="_blank" rel="noopener" style="color:#1a3a6b;font-weight:700">🛒 Ir a la tienda</a>
     </nav>
     <a class="nav-tienda" href="https://tienda.equoradistribuciones.com/tienda" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
