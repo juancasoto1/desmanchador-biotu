@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const shopifyController = require('../controllers/shopifyController');
+const { calculateByPostalCode } = require('../controllers/shippingController');
 
 // ── Health check ─────────────────────────────────────────────────────────────
 router.get('/health', (req, res) => {
@@ -27,6 +28,9 @@ router.get('/shopify-test', async (req, res, next) => {
 router.get('/productos',                      shopifyController.getAllProducts);
 router.get('/productos/:slug',                shopifyController.getProductBySlug);
 router.get('/productos/:slug/variantes',      shopifyController.getProductVariants);
+
+// ── Shipping ──────────────────────────────────────────────────────────────────
+router.post('/shipping/calculate-by-postal-code', calculateByPostalCode);
 
 // ── Webhooks (invalidación de caché) ──────────────────────────────────────────
 router.post('/webhooks/products/update',      shopifyController.handleProductUpdate);

@@ -76,6 +76,7 @@ app.listen(PORT, () => {
   console.log(`   GET  /api/productos`);
   console.log(`   GET  /api/productos/:slug`);
   console.log(`   GET  /api/productos/:slug/variantes`);
+  console.log(`   POST /api/shipping/calculate-by-postal-code`);
   console.log(`   POST /api/webhooks/products/update`);
   console.log(`   POST /api/webhooks/inventory/change`);
   console.log(`\n🌐 Frontend: ${process.env.FRONTEND_URL || `http://localhost:${PORT}`}\n`);
